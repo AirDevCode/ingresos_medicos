@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Ingresos y Salidas</title>
+</head>
+<body>
+    <h1>Registrar Ingreso/Salida</h1>
+    <form action="registro.php" method="POST">
+        <label for="id_personal">ID del Personal Médico:</label>
+        <input type="number" name="id_personal" id="id_personal" required><br><br>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" name="fecha" id="fecha" required><br><br>
+
+        <label for="hora_ingreso">Hora de Ingreso:</label>
+        <input type="time" name="hora_ingreso" id="hora_ingreso"><br><br>
+
+        <label for="hora_salida">Hora de Salida:</label>
+        <input type="time" name="hora_salida" id="hora_salida"><br><br>
+
+        <label for="observaciones">Observaciones:</label>
+        <textarea name="observaciones" id="observaciones"></textarea><br><br>
+
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>
